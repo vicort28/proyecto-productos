@@ -30,10 +30,12 @@ Asegúrate de tener instalado:
 
 ## Configuración del proyecto
 
-### 1.1 Clonar el repositorio
+### 1. Clonar el repositorio
 Clona el repositorio en tu máquina local:
 
+Asegurate de tener instalado git en tu máquina
 ```bash
+git init
 git clone https://github.com/tu_usuario/proyecto-productos.git
 cd proyecto-productos
 ```
