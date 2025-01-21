@@ -65,7 +65,7 @@ pip freeze > requirements.txt
 
 ---
 
-## 3. Configuración De Base de Datos y ejecucion del servidor loacl
+## 3. Configuración De Base de Datos y ejecucion del servidor local
 
 ### 3.1 Ejecutar migraciones
 Aplica las migraciones de base de datos para configurar la base de datos:
