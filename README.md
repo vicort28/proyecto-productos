@@ -63,7 +63,13 @@ En caso de agregar nuevas dependencias
 pip freeze > requirements.txt
 ```
 
-### 3. Iniciar el servidor
+### 3. Ejecutar migraciones
+Aplica las migraciones de base de datos para configurar la base de datos:
+```bash
+python manage.py migrate
+```
+
+### 4. Iniciar el servidor
 ```bash
 py manage.py runserver
 ```
