@@ -36,3 +36,36 @@ Clona el repositorio en tu máquina local:
 ```bash
 git clone https://github.com/tu_usuario/proyecto-productos.git
 cd proyecto-productos
+```
+---
+
+## Configuración Del entorno virtual
+Un entorno virtual ayuda a aislar las dependencias del proyecto. Sigue los pasos a continuación:
+### 1. Crear y activar el entorno virtual:
+
+En Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+En macOS/Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 2. Instalar las dependencias
+```bash
+pip install -r requirements.txt
+```
+En caso de agregar nuevas dependencias
+```bash
+pip freeze > requirements.txt
+```
+
+### 3. Iniciar el servidor
+```bash
+py manage.py runserver
+```
+El servidor estará disponible en http://127.0.0.1:8000/.
+
