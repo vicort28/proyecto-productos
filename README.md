@@ -30,7 +30,7 @@ Asegúrate de tener instalado:
 
 ## Configuración del proyecto
 
-### 1. Clonar el repositorio
+### 1.1 Clonar el repositorio
 Clona el repositorio en tu máquina local:
 
 ```bash
@@ -39,9 +39,9 @@ cd proyecto-productos
 ```
 ---
 
-## Configuración Del entorno virtual
+## 2. Configuración Del entorno virtual
 Un entorno virtual ayuda a aislar las dependencias del proyecto. Sigue los pasos a continuación:
-### 1. Crear y activar el entorno virtual:
+### 2.1 Crear y activar el entorno virtual:
 
 En Windows
 ```bash
@@ -54,7 +54,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 2. Instalar las dependencias
+### 2.2 Instalar las dependencias
 ```bash
 pip install -r requirements.txt
 ```
@@ -63,13 +63,15 @@ En caso de agregar nuevas dependencias
 pip freeze > requirements.txt
 ```
 
-### 3. Ejecutar migraciones
+## 3. Configuración De Base de Datos y ejecucion del servidor loacl
+
+### 3.1 Ejecutar migraciones
 Aplica las migraciones de base de datos para configurar la base de datos:
 ```bash
 python manage.py migrate
 ```
 
-### 4. Iniciar el servidor
+### 3.2 Iniciar el servidor
 ```bash
 py manage.py runserver
 ```
