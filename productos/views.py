@@ -23,7 +23,7 @@ class ProductoListCreate(ManejoErrores, generics.ListCreateAPIView):
     def crear_producto(self, serializer):
         try:
             serializer.save()
-        except Exception as e:
+        except Exception as e: 
             return Response(
                 {"error": "Error al crear producto: " + str(e)},
                 status=status.HTTP_400_BAD_REQUEST
